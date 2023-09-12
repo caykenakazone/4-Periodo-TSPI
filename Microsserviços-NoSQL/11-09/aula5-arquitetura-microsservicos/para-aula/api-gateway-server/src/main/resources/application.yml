@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: api-gateway-server
+  cloud:
+    gateway:
+      enable: true
+      discovery:
+        locator:
+          enable: true
+          lower-case-service-id: true
+server:
+  port: 8765
+eureka:
+  instance: # nome do service
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

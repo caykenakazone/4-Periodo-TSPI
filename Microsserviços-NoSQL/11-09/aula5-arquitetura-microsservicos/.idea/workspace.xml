@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="149867b4-303c-4a81-8cd3-7724d8f20114" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/snack-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/components/AssetExample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/01-tablelamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/02-ceilinglamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/03-sconces.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/04-floorlamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/05-lightdecor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/06-garlands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/icone-sacola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/components/categorias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2VHE6ZR5DxzGiML2P4ECXb4tD4o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aluno/CarlosCayke/4-Periodo-TSPI/Microsserviços-NoSQL/11-09/aula5-arquitetura-microsservicos/para-aula/software-house",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="149867b4-303c-4a81-8cd3-7724d8f20114" name="Changes" comment="" />
+      <created>1694484430853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694484430853</updated>
+      <workItem from="1694484431875" duration="50000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

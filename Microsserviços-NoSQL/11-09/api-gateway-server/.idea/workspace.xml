@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1020c169-61dd-40b7-ae27-c77a453ee43e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/snack-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/components/AssetExample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/ex4-flatlist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/01-tablelamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/02-ceilinglamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/03-sconces.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/04-floorlamps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/05-lightdecor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/06-garlands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/icone-sacola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/components/categorias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Projeto Aplicação para Dispositivos Móveis/exdesignAppMoveis/package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2VHGtb1C5oesZT9OyrVU0CRut1D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aluno/CarlosCayke/4-Periodo-TSPI/Microsserviços-NoSQL/11-09/aula5-arquitetura-microsservicos/para-aula/api-gateway-server",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ApiGatewayServerApplication">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="api-gateway-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="api-gateway-server" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.iftm.apigatewayserver.ApiGatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="software-house" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.iftm.startexample.StartExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1020c169-61dd-40b7-ae27-c77a453ee43e" name="Changes" comment="" />
+      <created>1694485809859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694485809859</updated>
+      <workItem from="1694485810869" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
