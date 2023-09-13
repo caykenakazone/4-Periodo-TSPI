@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: eureka-client-software-house
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: myCompany
+
+# Configuracao da porta do serviço de forma aleatoria
+server:
+  port: ${PORT:0}
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# Mostrar Queries MongoDB no Terminal:
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG

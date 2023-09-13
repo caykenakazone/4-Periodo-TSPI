@@ -1,0 +1,947 @@
+{
+	"info": {
+		"_postman_id": "5b80e6d6-8eeb-4939-89bc-8919acee6bfc",
+		"name": "software-house-ms-netflix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7132654"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "sector",
+					"item": [
+						{
+							"name": "GetSectors",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetSector",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:00:09 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"64f628659290503d7ca94a08\",\n        \"name\": \"Departamento de Vendas\",\n        \"description\": \"Responsável pelas vendas da empresa.\",\n        \"employees\": null\n    }\n]"
+								},
+								{
+									"name": "GetSector",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:02:47 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"64f628659290503d7ca94a08\",\n        \"name\": \"Departamento de Vendas\",\n        \"description\": \"Responsável pelas vendas da empresa.\",\n        \"employees\": null\n    },\n    {\n        \"id\": \"64f629929290503d7ca94a0c\",\n        \"name\": \"Departamento de Desenvolvimento\",\n        \"description\": \"Responsável pelo desenvolvimento de software.\",\n        \"employees\": [\n            {\n                \"id\": \"64f628da9290503d7ca94a0b\",\n                \"firstName\": \"Renan\",\n                \"lastName\": \"Cardoso\",\n                \"level\": \"Pleno\",\n                \"wage\": 7000\n            }\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GetSectorById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors/id/64f628659290503d7ca94a08",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors",
+										"id",
+										"64f628659290503d7ca94a08"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetSectorById",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors/id/64f628659290503d7ca94a08",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors",
+												"id",
+												"64f628659290503d7ca94a08"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:00:51 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f628659290503d7ca94a08\",\n    \"name\": \"Departamento de Vendas\",\n    \"description\": \"Responsável pelas vendas da empresa.\",\n    \"employees\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "GetSectorByEmployeeId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors/employee/id/64f628da9290503d7ca94a0b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors",
+										"employee",
+										"id",
+										"64f628da9290503d7ca94a0b"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetSectorByEmployeeId",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors/employee/id/64f628da9290503d7ca94a0b",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors",
+												"employee",
+												"id",
+												"64f628da9290503d7ca94a0b"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:02:31 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f629929290503d7ca94a0c\",\n    \"name\": \"Departamento de Desenvolvimento\",\n    \"description\": \"Responsável pelo desenvolvimento de software.\",\n    \"employees\": [\n        {\n            \"id\": \"64f628da9290503d7ca94a0b\",\n            \"firstName\": \"Renan\",\n            \"lastName\": \"Cardoso\",\n            \"level\": \"Pleno\",\n            \"wage\": 7000\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "AddEmployee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors/sector/id/64f67f3f08b6931078ff2907/add-employee/id/64f67eed08b6931078ff2905",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors",
+										"sector",
+										"id",
+										"64f67f3f08b6931078ff2907",
+										"add-employee",
+										"id",
+										"64f67eed08b6931078ff2905"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "AddEmployee",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": \"64f628da9290503d7ca94a0b\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors/sector/64f629929290503d7ca94a0c/add-employee",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors",
+												"sector",
+												"64f629929290503d7ca94a0c",
+												"add-employee"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:02:04 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f629929290503d7ca94a0c\",\n    \"name\": \"Departamento de Desenvolvimento\",\n    \"description\": \"Responsável pelo desenvolvimento de software.\",\n    \"employees\": [\n        {\n            \"id\": \"64f628da9290503d7ca94a0b\",\n            \"firstName\": \"Renan\",\n            \"lastName\": \"Cardoso\",\n            \"level\": \"Pleno\",\n            \"wage\": 7000\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "CreateSector",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Departamento de Desenvolvimento Go Horse\",\r\n    \"description\": \"Responsável pelo desenvolvimento de software.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CreateSector",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Departamento de Desenvolvimento\",\r\n    \"description\": \"Responsável pelo desenvolvimento de software.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/v1/sectors",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"sectors"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:01:38 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f629929290503d7ca94a0c\",\n    \"name\": \"Departamento de Desenvolvimento\",\n    \"description\": \"Responsável pelo desenvolvimento de software.\",\n    \"employees\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "UpdateSector",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"64f6754aa3a3f3160365b712\",\r\n    \"name\": \"Departamento de Desenvolvimento\",\r\n    \"description\": \"Responsável pelo desenvolvimento de software.\",\r\n    \"employees\": [\r\n        {\r\n            \"id\": \"64f672edcb1f0755587db6dc\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteSectorById",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/sectors/id/64f6119b1e059454d80ce9a7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"sectors",
+										"id",
+										"64f6119b1e059454d80ce9a7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "GetEmployee",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetEmployee",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/employees",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"employees"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 18:59:03 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"64f628b69290503d7ca94a0a\",\n        \"firstName\": \"João\",\n        \"lastName\": \"Silva\",\n        \"level\": \"Junior\",\n        \"wage\": 5000\n    },\n    {\n        \"id\": \"64f628da9290503d7ca94a0b\",\n        \"firstName\": \"Renan\",\n        \"lastName\": \"Cardoso\",\n        \"level\": \"Pleno\",\n        \"wage\": 7000\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "GetEmployeeById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees/id/64f628b69290503d7ca94a0a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees",
+										"id",
+										"64f628b69290503d7ca94a0a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetEmployeeByWageAbove",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees/wage-above/6500",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees",
+										"wage-above",
+										"6500"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetEmployeeByWageAbove",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/v1/employees/wage-above/6500",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"employees",
+												"wage-above",
+												"6500"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 19:57:34 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": \"64f628da9290503d7ca94a0b\",\n        \"firstName\": \"Renan\",\n        \"lastName\": \"Cardoso\",\n        \"level\": \"Pleno\",\n        \"wage\": 7000\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "CreateEmployee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"João Pedro\",\r\n    \"lastName\": \"Batista\",\r\n    \"level\": \"Senior\",\r\n    \"wage\": 11000.0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "CreateEmployee",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"João\",\r\n    \"lastName\": \"Silva\",\r\n    \"level\": \"Junior\",\r\n    \"wage\": 5000.0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/v1/employees",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"employees"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 18:57:58 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f628b69290503d7ca94a0a\",\n    \"firstName\": \"João\",\n    \"lastName\": \"Silva\",\n    \"level\": \"Junior\",\n    \"wage\": 5000\n}"
+								},
+								{
+									"name": "CreateEmployee",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"firstName\": \"Renan\",\r\n    \"lastName\": \"Cardoso\",\r\n    \"level\": \"Pleno\",\r\n    \"wage\": 7000.0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/v1/employees",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"employees"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 18:58:34 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f628da9290503d7ca94a0b\",\n    \"firstName\": \"Renan\",\n    \"lastName\": \"Cardoso\",\n    \"level\": \"Pleno\",\n    \"wage\": 7000\n}"
+								}
+							]
+						},
+						{
+							"name": "UpdateEmployee",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"64f628b69290503d7ca94a0a\",\r\n    \"firstName\": \"João\",\r\n    \"lastName\": \"da Silva\",\r\n    \"level\": \"Junior\",\r\n    \"wage\": 5500\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "UpdateEmployee",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": \"64f628b69290503d7ca94a0a\",\r\n    \"firstName\": \"João\",\r\n    \"lastName\": \"da Silva\",\r\n    \"level\": \"Junior\",\r\n    \"wage\": 5500\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/v1/employees",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"v1",
+												"employees"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Sep 2023 18:59:48 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": \"64f628b69290503d7ca94a0a\",\n    \"firstName\": \"João\",\n    \"lastName\": \"da Silva\",\n    \"level\": \"Junior\",\n    \"wage\": 5500\n}"
+								}
+							]
+						},
+						{
+							"name": "DeleteEmployeeById",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/eureka-client-software-house/api/v1/employees/id/64f628759290503d7ca94a09",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"eureka-client-software-house",
+										"api",
+										"v1",
+										"employees",
+										"id",
+										"64f628759290503d7ca94a09"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
