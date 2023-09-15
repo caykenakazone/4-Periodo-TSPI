@@ -12,46 +12,32 @@ public class ServidorSocket {
     private static int nsuCounter = 1;
 
     public static void main(String[] args) throws IOException {
-        cartoes.add(new Cartao("4012-3102-1845", "João da Silva", 1000.0));
-        cartoes.add(new Cartao("5123-4567-8901", "Maria Oliveira", 500.0));
-        cartoes.add(new Cartao("6010-1234-5678", "Pedro Santos", 750.0));
+        cartoes.add(new Cartao("401231021845", "João da Silva", 1000.0));
+        cartoes.add(new Cartao("512345678901", "Maria Oliveira", 500.0));
+        cartoes.add(new Cartao("601012345678", "Pedro Santos", 750.0));
 
         ServerSocket serverSocket = new ServerSocket(2001);
         System.out.println("Servidor aguardando conexões...");
         while (true) {
             Socket socket = serverSocket.accept();
             System.out.println("Cliente conectado: " + socket.getInetAddress());
-
             Thread clientThread = new Thread(() -> {
                 try (
                         DataInputStream entrada = new DataInputStream(socket.getInputStream());
                         DataOutputStream saida = new DataOutputStream(socket.getOutputStream())
                 ) {
                     while (true) {
-                        byte[] cabecalhoBytes = new byte[4];
-                        int bytesRead = entrada.read(cabecalhoBytes, 0, 4);
-                        if (bytesRead != 4) {
-                            System.out.println("Cabeçalho inválido: " + new String(cabecalhoBytes, 0, bytesRead));
-                            continue;
-                        }
-                        String cabecalho = new String(cabecalhoBytes);
-
-
-                        byte[] mensagemBytes = new byte[1024];
-                        bytesRead = entrada.read(mensagemBytes);
-                        String mensagem = new String(mensagemBytes, 0, bytesRead);
-                        System.out.println("Mensagem recebida: " + cabecalho + mensagem);
-                        String resposta = processarMensagem(cabecalho + mensagem);
-                        saida.write(resposta.getBytes());
+                        String mensagem = entrada.readUTF();
+                        System.out.println("Mensagem recebida: " + mensagem);
+                        String resposta = processarMensagem(mensagem);
+                        saida.writeUTF(resposta);
                         System.out.println("Resposta enviada: " + resposta);
                     }
                 } catch (IOException e) {
-                    e.printStackTrace();
-                } finally {
                     try {
                         socket.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
                     }
                 }
             });
@@ -61,16 +47,30 @@ public class ServidorSocket {
     }
 
     private static synchronized String processarMensagem(String mensagem) {
-        String tipoMensagem = mensagem.substring(0, 4);
-        String numeroCartao = mensagem.substring(4, 19);
-        String valorCentavosStr = mensagem.substring(19, 31);
-        String horaLocalTransacao = mensagem.substring(31, 37);
-        String dataTransacao = mensagem.substring(37, 41);
-        String redeTransmissora = mensagem.substring(41, 47);
+        String tipoMensagem = mensagem.substring(0, 3);
+        String valorCentavosStr = mensagem.substring(4, 12);
+        double valorCentavos = Double.parseDouble(valorCentavosStr) / 100.0;
+        String horaLocalTransacao = mensagem.substring(13, 18);
+        String dataTransacao = mensagem.substring(19, 22);
+        String redeTransmissora = mensagem.substring(23, 28);
+        String numeroCartao = mensagem.substring(29, 40);
+        String formaPag = mensagem.substring(41);
 
 
-        return "0200" + gerarNSU();
+        for (Cartao cartao : cartoes) {
+            if (cartao.getNumero().equals(numeroCartao)) {
+                if (valorCentavos > cartao.getSaldo()) {
+                    return "5100" + "0000";
+                } else {
+                    cartao.realizarDebito(valorCentavos);
+                    String nsu = gerarNSU();
+                    return "0000" + nsu;
+                }
+            }
+        }
+        return "0500" + "0000";
     }
+
 
     private static Cartao encontrarCartao(String numeroCartao) {
         for (Cartao cartao : cartoes) {
@@ -82,6 +82,7 @@ public class ServidorSocket {
     }
 
     private static synchronized String gerarNSU() {
-        return String.format("%04d", nsuCounter++);
+        return String.format("", nsuCounter++);
     }
+
 }

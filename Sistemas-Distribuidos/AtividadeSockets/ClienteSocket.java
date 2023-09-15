@@ -11,26 +11,10 @@ public class ClienteSocket {
             DataInputStream entrada = new DataInputStream(socket.getInputStream());
             DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
 
-            Mensagem mensagem = new Mensagem(
-                    "0200",
-                    "0412345678901234",
-                    "000000000123",
-                    "121212123456",
-                    "0512",
-                    "000000",
-                    "401231021845",
-                    "1"
-            );
-
-            String mensagemCompleta = mensagem.construirMensagem();
-
-            byte[] mensagemBytes = mensagemCompleta.getBytes();
-
-            saida.write(mensagemBytes);
-
-            byte[] respostaBytes = new byte[1024];
-            int bytesRead = entrada.read(respostaBytes);
-            String resposta = new String(respostaBytes, 0, bytesRead);
+            Mensagem msg = new Mensagem("0200","000000002100","10446","0512","040104","401231021845","1");
+            String msgP = msg.construirMensagem();
+            saida.writeUTF(msgP);
+            String resposta = entrada.readUTF();
             System.out.println("Resposta do servidor: " + resposta);
 
             socket.close();
