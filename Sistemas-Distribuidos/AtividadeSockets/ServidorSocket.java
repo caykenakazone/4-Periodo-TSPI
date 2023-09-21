@@ -47,18 +47,18 @@ public class ServidorSocket {
     }
 
     private static synchronized String processarMensagem(String mensagem) {
-        String tipoMensagem = mensagem.substring(0, 3);
-        String valorCentavosStr = mensagem.substring(4, 12);
+        String tipoMensagem = mensagem.substring(0, 4);
+        String valorCentavosStr = mensagem.substring(5, 15);
         double valorCentavos = Double.parseDouble(valorCentavosStr) / 100.0;
-        String horaLocalTransacao = mensagem.substring(13, 18);
-        String dataTransacao = mensagem.substring(19, 22);
-        String redeTransmissora = mensagem.substring(23, 28);
-        String numeroCartao = mensagem.substring(29, 40);
-        String formaPag = mensagem.substring(41);
+        String horaLocalTransacao = mensagem.substring(15, 21);
+        String dataTransacao = mensagem.substring(22, 25);
+        String redeTransmissora = mensagem.substring(25, 31);
+        String numeroCartao = mensagem.substring(31, 43);
+        String formaPag = mensagem.substring(43);
 
 
         for (Cartao cartao : cartoes) {
-            if (cartao.getNumero().equals(numeroCartao)) {
+            if (encontrarCartao(numeroCartao)) {
                 if (valorCentavos > cartao.getSaldo()) {
                     return "5100" + "0000";
                 } else {
@@ -67,22 +67,24 @@ public class ServidorSocket {
                     return "0000" + nsu;
                 }
             }
+
         }
         return "0500" + "0000";
     }
 
 
-    private static Cartao encontrarCartao(String numeroCartao) {
+    private static boolean encontrarCartao(String numeroCartao) {
         for (Cartao cartao : cartoes) {
             if (cartao.getNumero().equals(numeroCartao)) {
-                return cartao;
+                return true;
             }
         }
-        return null;
+        return false;
     }
 
     private static synchronized String gerarNSU() {
-        return String.format("", nsuCounter++);
+        return String.format("%04d", nsuCounter++);
     }
+
 
 }

@@ -11,7 +11,7 @@ public class ClienteSocket {
             DataInputStream entrada = new DataInputStream(socket.getInputStream());
             DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
 
-            Mensagem msg = new Mensagem("0200","000000002100","10446","0512","040104","401231021845","1");
+            Mensagem msg = new Mensagem("0200","00000000200","104426","0512","040104","401231021845","1");
             String msgP = msg.construirMensagem();
             saida.writeUTF(msgP);
             String resposta = entrada.readUTF();
