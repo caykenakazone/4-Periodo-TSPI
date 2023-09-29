@@ -3,17 +3,15 @@ package com.example.newsletter.services;
 import com.example.newsletter.models.News;
 import com.example.newsletter.models.dtos.NewsDTO;
 import com.example.newsletter.repositories.NewsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class NewsService {
-    private final NewsRepository repository;
-
-    public NewsService(NewsRepository newsRepository) {
-        this.repository = newsRepository;
-    }
+    @Autowired
+    private  NewsRepository repository;
 
     public List<News> findAll() {
         return repository.findAll();

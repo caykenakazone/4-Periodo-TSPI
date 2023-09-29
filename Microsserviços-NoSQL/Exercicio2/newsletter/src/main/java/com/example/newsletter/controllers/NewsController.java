@@ -3,6 +3,8 @@ package com.example.newsletter.controllers;
 import com.example.newsletter.models.News;
 import com.example.newsletter.models.dtos.NewsDTO;
 import com.example.newsletter.services.NewsService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,12 +12,12 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/news")
 public class NewsController {
-    private final NewsService service;
+    @Autowired
+    private NewsService service;
 
     public NewsController(NewsService service) {
         this.service = service;
     }
-
     @GetMapping
     public List<News> findAll() {
         return service.findAll();

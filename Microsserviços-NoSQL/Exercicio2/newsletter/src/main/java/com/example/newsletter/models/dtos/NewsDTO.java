@@ -3,6 +3,7 @@ package com.example.newsletter.models.dtos;
 import com.example.newsletter.models.Post;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -63,6 +64,14 @@ public class NewsDTO implements Serializable {
 
     public void setPosts(List<Post> posts) {
         this.posts = posts;
+    }
+
+    // Método para adicionar um Post à lista de posts
+    public void addPost(Post post) {
+        if (posts == null) {
+            posts = new ArrayList<>();
+        }
+        posts.add(post);
     }
 
     @Override

@@ -27,6 +27,15 @@ public class News {
         this.posts = posts;
     }
 
+    public News(NewsDTO newsDTO) {
+        this.id = newsDTO.getId();
+        this.title = newsDTO.getTitle();
+        this.date = newsDTO.getDate();
+        this.editorName = newsDTO.getEditorName();
+        this.posts = newsDTO.getPosts();
+      }
+
+
     public String getId() {
         return id;
     }
