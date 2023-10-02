@@ -1,10 +1,11 @@
 package com.iftm.log.models;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 import java.util.Objects;
-
+@Document(collection = "newsletterLogs")
 public class Log<T> {
     @Id
     private String id;
