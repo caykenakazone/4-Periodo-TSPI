@@ -3,6 +3,7 @@ package com.example.newsletter.controllers;
 import com.example.newsletter.models.News;
 import com.example.newsletter.models.dtos.NewsDTO;
 import com.example.newsletter.services.NewsService;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,27 +20,27 @@ public class NewsController {
         this.service = service;
     }
     @GetMapping
-    public List<News> findAll() {
+    public ResponseEntity<List<NewsDTO>> findAll(){
         return service.findAll();
     }
 
-    @GetMapping("/{id}")
-    public News findById(@PathVariable String id) {
+    @GetMapping("id/{id}")
+    public ResponseEntity<NewsDTO> findById(@PathVariable("id") ObjectId id){
         return service.findById(id);
     }
 
     @PostMapping
-    public News create(@RequestBody NewsDTO newsDto) {
-        return service.create(newsDto);
+    public ResponseEntity<NewsDTO> create(@RequestBody NewsDTO news) {
+        return service.save(news);
     }
 
     @PutMapping
-    public News update(@RequestBody News news) {
+    public ResponseEntity<NewsDTO> update(@RequestBody NewsDTO news) {
         return service.update(news);
     }
 
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable String id) {
-        service.delete(id);
+    @DeleteMapping("id/{id}")
+    public ResponseEntity<?> delete(@PathVariable("id") ObjectId id){
+        return service.delete(id);
     }
 }

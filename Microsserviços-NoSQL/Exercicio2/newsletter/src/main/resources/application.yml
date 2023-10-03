@@ -23,7 +23,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 # RabbitMQ - Variaveis de ambiente customizadas
-softwareHouse:
+newsletter:
   rabbitmq:
     exchange: newsletter.exchange
     rountingkey: newsletter.employee.routingkey

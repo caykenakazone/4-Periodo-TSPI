@@ -1,6 +1,8 @@
 package com.example.newsletter.models.dtos;
 
+import com.example.newsletter.models.News;
 import com.example.newsletter.models.Post;
+import org.bson.types.ObjectId;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,7 +13,6 @@ public class NewsDTO implements Serializable {
     private String id;
     private String title;
     private String date;
-
     private String editorName;
     private List<Post> posts;
 
@@ -24,6 +25,33 @@ public class NewsDTO implements Serializable {
         this.date = date;
         this.editorName = editorName;
         this.posts = posts;
+    }
+
+    public NewsDTO(String title, String date, String editorName, List<Post> posts) {
+        this.title = title;
+        this.date = date;
+        this.editorName = editorName;
+        this.posts = posts;
+    }
+    public NewsDTO(News news) {
+        this.id = news.getId().toString();
+        this.title = news.getTitle();
+        this.date = news.getDate();
+        this.editorName = news.getEditorName();
+        this.posts = news.getPosts();
+    }
+
+
+    public News toNews(){
+        ObjectId id = null;
+        if(this.id != null) id = new ObjectId(this.id);
+        return new News(
+                id,
+                this.title,
+                this.date,
+                this.editorName,
+                this.posts
+        );
     }
 
     public String getId() {
@@ -66,35 +94,4 @@ public class NewsDTO implements Serializable {
         this.posts = posts;
     }
 
-    // Método para adicionar um Post à lista de posts
-    public void addPost(Post post) {
-        if (posts == null) {
-            posts = new ArrayList<>();
-        }
-        posts.add(post);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        NewsDTO newsDTO = (NewsDTO) o;
-        return Objects.equals(id, newsDTO.id) && Objects.equals(title, newsDTO.title) && Objects.equals(date, newsDTO.date) && Objects.equals(editorName, newsDTO.editorName) && Objects.equals(posts, newsDTO.posts);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, date, editorName, posts);
-    }
-
-    @Override
-    public String toString() {
-        return "NewsDTO{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", date='" + date + '\'' +
-                ", editorName='" + editorName + '\'' +
-                ", posts=" + posts +
-                '}';
-    }
 }

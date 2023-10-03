@@ -1,25 +1,28 @@
 package com.example.newsletter.models;
 
 import com.example.newsletter.models.dtos.NewsDTO;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
+@Document(collection = "news")
 public class News {
+
     @Id
-    private String id;
+    private ObjectId id;
     private String title;
     private String date;
-
     private String editorName;
     private List<Post> posts;
 
     public News() {
     }
 
-    public News(String id, String title, String date, String editorName, List<Post> posts) {
+    public News(ObjectId id, String title, String date, String editorName, List<Post> posts) {
         this.id = id;
         this.title = title;
         this.date = date;
@@ -27,20 +30,11 @@ public class News {
         this.posts = posts;
     }
 
-    public News(NewsDTO newsDTO) {
-        this.id = newsDTO.getId();
-        this.title = newsDTO.getTitle();
-        this.date = newsDTO.getDate();
-        this.editorName = newsDTO.getEditorName();
-        this.posts = newsDTO.getPosts();
-      }
-
-
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 
@@ -48,8 +42,8 @@ public class News {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitle(String tittle) {
+        this.title = tittle;
     }
 
     public String getDate() {
@@ -81,19 +75,19 @@ public class News {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         News news = (News) o;
-        return Objects.equals(id, news.id) && Objects.equals(title, news.title) && Objects.equals(date, news.date) && Objects.equals(editorName, news.editorName) && Objects.equals(posts, news.posts);
+        return Objects.equals(id, news.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, date, editorName, posts);
+        return Objects.hash(id);
     }
 
     @Override
     public String toString() {
         return "News{" +
                 "id='" + id + '\'' +
-                ", title='" + title + '\'' +
+                ", tittle='" + title + '\'' +
                 ", date='" + date + '\'' +
                 ", editorName='" + editorName + '\'' +
                 ", posts=" + posts +
