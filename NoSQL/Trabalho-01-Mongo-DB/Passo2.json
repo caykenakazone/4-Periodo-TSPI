@@ -1,0 +1,99 @@
+db.createCollection("trab1",
+{
+    validator: {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "required": [
+                "name",
+                "start_date",
+                "end_date",
+                "tasks"
+            ],
+            "properties": {
+                "name": {
+                    "bsonType": "string",
+                    "description": "Nome do projeto"
+                },
+                "start_date": {
+                    "bsonType": "date",
+                    "description": "Data de início do projeto"
+                },
+                "end_date": {
+                    "bsonType": "date",
+                    "description": "Data de término do projeto"
+                },
+                "tasks": {
+                    "bsonType": "array",
+                    "description": "Lista de tarefas",
+                    "items": {
+                        "bsonType": "object",
+                        "required": [
+                            "title",
+                            "description",
+                            "start_date",
+                            "deadline_date",
+                            "priority",
+                            "status",
+                            "assigned_user"
+                        ],
+                        "properties": {
+                            "title": {
+                                "bsonType": "string",
+                                "description": "Título da tarefa"
+                            },
+                            "description": {
+                                "bsonType": "string",
+                                "description": "Descrição da tarefa"
+                            },
+                            "start_date": {
+                                "bsonType": "date",
+                                "description": "Data de início da tarefa"
+                            },
+                            "deadline_date": {
+                                "bsonType": "date",
+                                "description": "Data limite para conclusão da tarefa"
+                            },
+                            "priority": {
+                                "bsonType": "int",
+                                "description": "Prioridade da tarefa"
+                            },
+                            "status": {
+                                "bsonType": "string",
+                                "description": "Status da tarefa"
+                            },
+                            "assigned_user": {
+                                "bsonType": "object",
+                                "required": [
+                                    "first_name",
+                                    "last_name",
+                                    "email",
+                                    "cell_phone"
+                                ],
+                                "properties": {
+                                    "first_name": {
+                                        "bsonType": "string",
+                                        "description": "Primeiro nome do usuário atribuído à tarefa"
+                                    },
+                                    "last_name": {
+                                        "bsonType": "string",
+                                        "description": "Último nome do usuário atribuído à tarefa"
+                                    },
+                                    "email": {
+                                        "bsonType": "string",
+                                        "description": "Endereço de e-mail do usuário atribuído à tarefa"
+                                    },
+                                    "cell_phone": {
+                                        "bsonType": "string",
+                                        "description": "Número de celular do usuário atribuído à tarefa"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+)
+

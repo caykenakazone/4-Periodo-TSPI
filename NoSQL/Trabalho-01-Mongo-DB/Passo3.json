@@ -1,0 +1,429 @@
+db.trab1.insertMany([
+    {
+        "name": "Projeto Exemplo",
+        "start_date": ISODate("2023-10-20T08:00:00Z"),
+        "end_date": ISODate("2023-10-25T17:00:00Z"),
+        "tasks": [
+            {
+                "title": "Tarefa 1",
+                "description": "Descrição da Tarefa 1",
+                "start_date": ISODate("2023-10-20T08:00:00Z"),
+                "deadline_date": ISODate("2023-10-25T17:00:00Z"),
+                "priority": 1,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "João",
+                    "last_name": "Silva",
+                    "email": "joao@example.com",
+                    "cell_phone": "123-456-7890"
+                }
+            },
+            {
+                "title": "Tarefa 2",
+                "description": "Descrição da Tarefa 2",
+                "start_date": ISODate("2023-10-22T09:00:00Z"),
+                "deadline_date": ISODate("2023-10-27T18:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Ana",
+                    "last_name": "Santos",
+                    "email": "ana@example.com",
+                    "cell_phone": "234-567-8901"
+                }
+            },
+            {
+                "title": "Tarefa 3",
+                "description": "Descrição da Tarefa 31",
+                "start_date": ISODate("2023-11-01T10:00:00Z"),
+                "deadline_date": ISODate("2023-11-05T15:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Carla",
+                    "last_name": "Ferreira",
+                    "email": "carla@example.com",
+                    "cell_phone": "345-678-9012"
+                }
+            },
+            {
+                "title": "Tarefa 4",
+                "description": "Descrição da Tarefa 32",
+                "start_date": ISODate("2023-11-03T14:00:00Z"),
+                "deadline_date": ISODate("2023-11-08T16:00:00Z"),
+                "priority": 1,
+                "status": "Concluída",
+                "assigned_user": {
+                    "first_name": "Marcos",
+                    "last_name": "Lima",
+                    "email": "marcos@example.com",
+                    "cell_phone": "456-789-0123"
+                }
+            },
+            {
+                "title": "Tarefa 5",
+                "description": "Descrição da Tarefa 33",
+                "start_date": ISODate("2023-11-05T11:00:00Z"),
+                "deadline_date": ISODate("2023-11-10T13:00:00Z"),
+                "priority": 2,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Eva",
+                    "last_name": "Ramos",
+                    "email": "eva@example.com",
+                    "cell_phone": "567-890-1234"
+                }
+            },
+            {
+                "title": "Tarefa 6",
+                "description": "Descrição da Tarefa 34",
+                "start_date": ISODate("2023-11-07T09:00:00Z"),
+                "deadline_date": ISODate("2023-11-12T12:00:00Z"),
+                "priority": 1,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Pedro",
+                    "last_name": "Oliveira",
+                    "email": "pedro@example.com",
+                    "cell_phone": "678-901-2345"
+                }
+            },
+            {
+                "title": "Tarefa 7",
+                "description": "Descrição da Tarefa 35",
+                "start_date": ISODate("2023-11-09T15:00:00Z"),
+                "deadline_date": ISODate("2023-11-14T18:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Mariana",
+                    "last_name": "Sousa",
+                    "email": "mariana@example.com",
+                    "cell_phone": "789-012-3456"
+                }
+            },
+            {
+                "title": "Tarefa 8",
+                "description": "Descrição da Tarefa 36",
+                "start_date": ISODate("2023-11-11T12:00:00Z"),
+                "deadline_date": ISODate("2023-11-16T16:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Rafael",
+                    "last_name": "Pereira",
+                    "email": "rafael@example.com",
+                    "cell_phone": "890-123-4567"
+                }
+            },
+            {
+                "title": "Tarefa 9",
+                "description": "Descrição da Tarefa 37",
+                "start_date": ISODate("2023-11-13T14:00:00Z"),
+                "deadline_date": ISODate("2023-11-18T17:00:00Z"),
+                "priority": 1,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Larissa",
+                    "last_name": "Mendes",
+                    "email": "larissa@example.com",
+                    "cell_phone": "901-234-5678"
+                }
+            },
+            {
+                "title": "Tarefa 10",
+                "description": "Descrição da Tarefa 38",
+                "start_date": ISODate("2023-11-15T16:00:00Z"),
+                "deadline_date": ISODate("2023-11-20T19:00:00Z"),
+                "priority": 3,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Gustavo",
+                    "last_name": "Almeida",
+                    "email": "gustavo@example.com",
+                    "cell_phone": "123-456-7890"
+                }
+            },
+            {
+                "title": "Tarefa 11",
+                "description": "Descrição da Tarefa 10",
+                "start_date": ISODate("2023-10-29T09:00:00Z"),
+                "deadline_date": ISODate("2023-11-03T18:00:00Z"),
+                "priority": 1,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Gabriel",
+                    "last_name": "Melo",
+                    "email": "gabriel@example.com",
+                    "cell_phone": "234-567-8901"
+                }
+            },
+            {
+                "title": "Tarefa 12",
+                "description": "Descrição da Tarefa 9",
+                "start_date": ISODate("2023-10-27T10:00:00Z"),
+                "deadline_date": ISODate("2023-11-01T19:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Isabel",
+                    "last_name": "Rocha",
+                    "email": "isabel@example.com",
+                    "cell_phone": "345-678-9012"
+                }
+            },
+            {
+                "title": "Tarefa 13",
+                "description": "Descrição da Tarefa 8",
+                "start_date": ISODate("2023-10-25T11:00:00Z"),
+                "deadline_date": ISODate("2023-10-31T20:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Lucas",
+                    "last_name": "Santana",
+                    "email": "lucas@example.com",
+                    "cell_phone": "456-789-0123"
+                }
+            },
+            {
+                "title": "Tarefa 14",
+                "description": "Descrição da Tarefa 7",
+                "start_date": ISODate("2023-10-23T13:00:00Z"),
+                "deadline_date": ISODate("2023-10-29T22:00:00Z"),
+                "priority": 1,
+                "status": "Concluída",
+                "assigned_user": {
+                    "first_name": "Mariana",
+                    "last_name": "Oliveira",
+                    "email": "mariana@example.com",
+                    "cell_phone": "567-890-1234"
+                }
+            },
+            {
+                "title": "Tarefa 15",
+                "description": "Descrição da Tarefa 6",
+                "start_date": ISODate("2023-10-21T15:00:00Z"),
+                "deadline_date": ISODate("2023-10-27T00:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Rafaela",
+                    "last_name": "Costa",
+                    "email": "rafaela@example.com",
+                    "cell_phone": "678-901-2345"
+                }
+            },
+            {
+                "title": "Tarefa 16",
+                "description": "Descrição da Tarefa 5",
+                "start_date": ISODate("2023-10-19T17:00:00Z"),
+                "deadline_date": ISODate("2023-10-25T02:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Diego",
+                    "last_name": "Lima",
+                    "email": "diego@example.com",
+                    "cell_phone": "789-012-3456"
+                }
+            },
+            {
+                "title": "Tarefa 17",
+                "description": "Descrição da Tarefa 4",
+                "start_date": ISODate("2023-10-17T19:00:00Z"),
+                "deadline_date": ISODate("2023-10-23T04:00:00Z"),
+                "priority": 1,
+                "status": "Concluída",
+                "assigned_user": {
+                    "first_name": "Juliana",
+                    "last_name": "Ferreira",
+                    "email": "juliana@example.com",
+                    "cell_phone": "890-123-4567"
+                }
+            },
+            {
+                "title": "Tarefa 18",
+                "description": "Descrição da Tarefa 3",
+                "start_date": ISODate("2023-10-15T21:00:00Z"),
+                "deadline_date": ISODate("2023-10-21T06:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "André",
+                    "last_name": "Silveira",
+                    "email": "andre@example.com",
+                    "cell_phone": "901-234-5678"
+                }
+            },
+            {
+                "title": "Tarefa 19",
+                "description": "Descrição da Tarefa 19",
+                "start_date": ISODate("2023-11-22T09:00:00Z"),
+                "deadline_date": ISODate("2023-11-27T18:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Catarina",
+                    "last_name": "Alves",
+                    "email": "catarina@example.com",
+                    "cell_phone": "234-567-8901"
+                }
+            },
+            {
+                "title": "Tarefa 20",
+                "description": "Descrição da Tarefa 20",
+                "start_date": ISODate("2023-11-24T14:00:00Z"),
+                "deadline_date": ISODate("2023-11-29T16:00:00Z"),
+                "priority": 1,
+                "status": "Concluída",
+                "assigned_user": {
+                    "first_name": "Daniel",
+                    "last_name": "Machado",
+                    "email": "daniel@example.com",
+                    "cell_phone": "345-678-9012"
+                }
+            },
+            {
+                "title": "Tarefa 21",
+                "description": "Descrição da Tarefa 21",
+                "start_date": ISODate("2023-11-26T11:00:00Z"),
+                "deadline_date": ISODate("2023-11-30T13:00:00Z"),
+                "priority": 2,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Eduardo",
+                    "last_name": "Gomes",
+                    "email": "eduardo@example.com",
+                    "cell_phone": "456-789-0123"
+                }
+            },
+            {
+                "title": "Tarefa 22",
+                "description": "Descrição da Tarefa 22",
+                "start_date": ISODate("2023-11-28T09:00:00Z"),
+                "deadline_date": ISODate("2023-12-02T12:00:00Z"),
+                "priority": 1,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Fernanda",
+                    "last_name": "Pereira",
+                    "email": "fernanda@example.com",
+                    "cell_phone": "567-890-1234"
+                }
+            },
+            {
+                "title": "Tarefa 23",
+                "description": "Descrição da Tarefa 23",
+                "start_date": ISODate("2023-11-30T15:00:00Z"),
+                "deadline_date": ISODate("2023-12-05T18:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Gustavo",
+                    "last_name": "Mendes",
+                    "email": "gustavo@example.com",
+                    "cell_phone": "678-901-2345"
+                }
+            },
+            {
+                "title": "Tarefa 24",
+                "description": "Descrição da Tarefa 24",
+                "start_date": ISODate("2023-12-02T12:00:00Z"),
+                "deadline_date": ISODate("2023-12-07T15:00:00Z"),
+                "priority": 3,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Helena",
+                    "last_name": "Ramos",
+                    "email": "helena@example.com",
+                    "cell_phone": "789-012-3456"
+                }
+            },
+            {
+                "title": "Tarefa 25",
+                "description": "Descrição da Tarefa 25",
+                "start_date": ISODate("2023-12-04T11:00:00Z"),
+                "deadline_date": ISODate("2023-12-09T13:00:00Z"),
+                "priority": 2,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Isabela",
+                    "last_name": "Oliveira",
+                    "email": "isabela@example.com",
+                    "cell_phone": "890-123-4567"
+                }
+            },
+            {
+                "title": "Tarefa 26",
+                "description": "Descrição da Tarefa 26",
+                "start_date": ISODate("2023-12-06T14:00:00Z"),
+                "deadline_date": ISODate("2023-12-11T17:00:00Z"),
+                "priority": 1,
+                "status": "Concluída",
+                "assigned_user": {
+                    "first_name": "José",
+                    "last_name": "Sousa",
+                    "email": "jose@example.com",
+                    "cell_phone": "901-234-5678"
+                }
+            },
+            {
+                "title": "Tarefa 27",
+                "description": "Descrição da Tarefa 27",
+                "start_date": ISODate("2023-12-08T16:00:00Z"),
+                "deadline_date": ISODate("2023-12-13T19:00:00Z"),
+                "priority": 2,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Lara",
+                    "last_name": "Fernandes",
+                    "email": "lara@example.com",
+                    "cell_phone": "901-234-5678"
+                }
+            },
+            {
+                "title": "Tarefa 28",
+                "description": "Descrição da Tarefa 28",
+                "start_date": ISODate("2023-12-10T14:00:00Z"),
+                "deadline_date": ISODate("2023-12-15T17:00:00Z"),
+                "priority": 1,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Miguel",
+                    "last_name": "Almeida",
+                    "email": "miguel@example.com",
+                    "cell_phone": "123-456-7890"
+                }
+            },
+            {
+                "title": "Tarefa 29",
+                "description": "Descrição da Tarefa 29",
+                "start_date": ISODate("2023-12-12T11:00:00Z"),
+                "deadline_date": ISODate("2023-12-17T13:00:00Z"),
+                "priority": 3,
+                "status": "Em Progresso",
+                "assigned_user": {
+                    "first_name": "Natalia",
+                    "last_name": "Lima",
+                    "email": "natalia@example.com",
+                    "cell_phone": "234-567-8901"
+                }
+            },
+            {
+                "title": "Tarefa 30",
+                "description": "Descrição da Tarefa 30",
+                "start_date": ISODate("2023-12-14T09:00:00Z"),
+                "deadline_date": ISODate("2023-12-19T12:00:00Z"),
+                "priority": 2,
+                "status": "Pendente",
+                "assigned_user": {
+                    "first_name": "Oliver",
+                    "last_name": "Silva",
+                    "email": "oliver@example.com",
+                    "cell_phone": "345-678-9012"
+                }
+            }
+        ]
+    }
+]);

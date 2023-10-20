@@ -1,0 +1,22 @@
+{
+    "name": "Project X",
+    "start_date": "2023-10-13",
+    "end_date": "2024-02-13",
+    "tasks": [
+      {
+        "title": "Task One",
+        "description": "Descrição",
+        "start_date": "2023-10-21",
+        "deadline_date": "2023-11-19",
+        "priority": 2,
+        "status": "Pendente",
+        "assigned_user": {
+          "first_name": "Cayke",
+          "last_name": "Borges",
+          "email": "cayke@teste.com",
+          "cell_phone": "34991234567"
+        }
+      }
+    ]
+  }
+  

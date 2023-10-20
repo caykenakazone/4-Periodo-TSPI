@@ -11,3 +11,5 @@ public class ApiGatewayApplication {
 	}
 
 }
+// oq posso fazer para melhorar as boas praticas de programação
+
