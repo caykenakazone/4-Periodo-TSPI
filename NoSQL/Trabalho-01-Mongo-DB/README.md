@@ -2,7 +2,7 @@
 
 # To-Do-List
  Esse trabalho para a matéria de Banco de dados NOSQL consiste na criação do banco de dados junto com queries customizadas para fazer a pesquisa dentro do Banco escolhido.
-### 🚧  Andamento do Projeto 🚀 Em construção...  🚧
+### Projeto Concluído ✅
 
 ### ✔ Funcionalidades
 
