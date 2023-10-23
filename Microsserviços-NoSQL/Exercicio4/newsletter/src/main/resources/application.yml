@@ -38,3 +38,6 @@ logging:
           mongodb:
             core:
               MongoTemplate: DEBUG
+
+firebase:
+  credential-file-name: firebase-account.json

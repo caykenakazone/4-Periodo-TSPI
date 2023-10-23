@@ -2,6 +2,7 @@ package com.example.newsletter.services;
 
 import com.example.newsletter.mensages.RabbitMqSendLog;
 import com.example.newsletter.models.News;
+import com.example.newsletter.models.NotificationMessage;
 import com.example.newsletter.models.dtos.LogDTO;
 import com.example.newsletter.models.dtos.NewsDTO;
 import com.example.newsletter.repositories.NewsRepository;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +26,8 @@ public class NewsService {
 
     @Autowired
     private RabbitMqSendLog rabbitMqSendLog;
+    @Autowired
+    private FirebaseMessagingService firebaseMessagingService;
 
     public ResponseEntity<List<NewsDTO>> findAll() {
         var dbNews = repository.findAll();
@@ -52,6 +56,14 @@ public class NewsService {
                         Date.from(Instant.now()),
                         new NewsDTO(savedNews),
                         savedNews.getClass().toString()));
+
+        firebaseMessagingService.sendNotification(new NotificationMessage(
+                "...",
+                news.getTitle(),
+                "Postagem adicionada.",
+                "https://play-lh.googleusercontent.com/ZrsPit-BgpiMdm3am82N-4XV5DJJTkf1JzWFi26F39dWX6gCBFylt3t4iL93NOYeVhM=w240-h480",
+                new HashMap<>()
+        ));
         return ResponseEntity.ok(new NewsDTO(savedNews));
     }
 
@@ -89,5 +101,6 @@ public class NewsService {
                         logNews.getClass().toString()));
         return ResponseEntity.ok().build();
     }
+
 
 }
