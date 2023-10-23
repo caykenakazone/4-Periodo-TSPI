@@ -132,9 +132,13 @@ Crie 15 queries para busca de projetos, tarefas e usuários;
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.026.png)
 
 12 - Tasks com prazo de entrega nos proximos 3 dias
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.027.png)
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.028.png)
+
 13 - Todas as tarefas concluídas atribuídas a usuários com prioridade 1
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.029.png)
 
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.030.png)
@@ -142,6 +146,7 @@ Crie 15 queries para busca de projetos, tarefas e usuários;
 14 - Todos os projetos ordenados pelo número de tarefas em progresso (status "Em Progresso")
 
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.031.png)
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.032.png)
 
 15 - Todos os usuários que têm pelo menos uma tarefa concluída com prioridade 1
@@ -164,11 +169,16 @@ Passo 5 -
 
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.038.png)
 
-3 - Mudar o status de “In Progress” para “Complete”;![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.039.png)
+3 - Mudar o status de “In Progress” para “Complete”;
+
+![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.039.png)
 
 Antes:
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.040.png)
+
 Depois:
+
 ![](Aspose.Words.4f22a8b4-4e99-4848-bb95-029302dc86ee.041.png)
 
 4 - Alterar a prioridade de uma tarefa específica
