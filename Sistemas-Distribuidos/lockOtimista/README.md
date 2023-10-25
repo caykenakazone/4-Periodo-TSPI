@@ -1,4 +1,4 @@
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ilimit.com%2Fblog%2Fimportancia-arquitectura-distribuida%2F&psig=AOvVaw3E4IagBs8dcmxNU3yTThHf&ust=1698355557002000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCw582RkoIDFQAAAAAdAAAAABAS" width="900px" height="500px">
+<img src="https://www.ilimit.com/wp-content/uploads/2020/06/arquitecturadistribuidasoftware-1.jpg" width="900px" height="500px">
 
 # Implementação Lock Otimista e Pessimista com Banco de Dados
  Essa aplicação sobre um sistema de transação utilizando Lock Otimista e Pessimista usando métodos POST.
