@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho 2 Lock Otimista e Pessimista</title>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 23px;
+    }
+
+    button {
+        display: flex;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #4CAF50;
+        color: rgb(0, 0, 0);
+        padding: 14px 20px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+<div>
+    <h1>Fazer transferência Lock Otimista</h1>
+    <button onclick="transferenciaOtimista()">Realizar Transferência</button>
+</div>
+<div>
+    <h1>Fazer transferência Lock Pessimista</h1>
+    <button onclick="transferenciaPessimista()">Realizar Transferência</button>
+</div>
+
+<script src="scripts.js"></script>
+
+<script>
+    async function transferenciaOtimista() {
+        try {
+            const endpoint = "http://localhost:8080/api/v1/contas/otimista";
+            const data = {
+                idDebito: 1,
+                idCredito: 2,
+                valorTrans: 100.0
+            };
+
+            const requests = [];
+
+            for (let i = 0; i < 100; i++) {
+                requests.push(fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                }));
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    async function realizarTransferenciaPessimista() {
+        const endpoint = "http://localhost:8080/api/v1/contas/pessimista";
+        const data = {
+            idDebito: 1,
+            idCredito: 2,
+            valorTrans: 100.0
+        };
+        const requests = [];
+        for (let i = 0; i < 100; i++) {
+            requests.push(
+                fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+            );
+        }
+    }
+
+
+</script>
+</body>
+
+</html>
