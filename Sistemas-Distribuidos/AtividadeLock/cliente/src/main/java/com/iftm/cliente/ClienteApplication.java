@@ -1,13 +1,13 @@
-package com.iftm.lockotimista;
+package com.iftm.cliente;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LockOtimistaApplication {
+public class ClienteApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LockOtimistaApplication.class, args);
+        SpringApplication.run(ClienteApplication.class, args);
     }
 
 }
