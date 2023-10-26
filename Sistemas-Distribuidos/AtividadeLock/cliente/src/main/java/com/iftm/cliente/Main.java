@@ -9,8 +9,8 @@ import org.apache.http.util.EntityUtils;
 
 public class Main {
     public static void main(String[] args) {
-        int i =0;
-        while (i<100) {
+        int i = 0;
+        while (i < 100) {
             Thread requestThread = new Thread(() -> {
                 criarRequisicao();
             });
@@ -18,23 +18,30 @@ public class Main {
             i++;
         }
     }
+
     public static void criarRequisicao() {
         try {
             CloseableHttpClient httpClient = HttpClients.createDefault();
             String urlOtimista = "http://localhost:8080/api/v1/contas/otimista";
             String urlPessimista = "http://localhost:8080/api/v1/contas/pessimista";
 
-            HttpPost postOtimista = new HttpPost( urlOtimista );
-            HttpPost postPessimista = new HttpPost( urlPessimista );
-            String jsonRequest = "{" +
-                    "\"numeroConta\":\""+2+
-                    "\",\"valor\":\""+100+"\"}";
+            HttpPost postOtimista = new HttpPost(urlOtimista);
+            HttpPost postPessimista = new HttpPost(urlPessimista);
 
-            StringEntity entity = new StringEntity(jsonRequest);
-            postOtimista.setEntity(entity);
+            String jsonRequest1 = "{" +
+                    "\"numeroConta\":\"" + 2 +
+                    "\",\"valor\":\"" + 100 + "\"}";
+
+            String jsonRequest2 = "{" +
+                    "\"numeroConta\":\"" + 2 +
+                    "\",\"valor\":\"" + 100 + "\"}";
+
+            StringEntity entity1 = new StringEntity(jsonRequest1);
+            StringEntity entity2 = new StringEntity(jsonRequest2);
+            postOtimista.setEntity(entity1);
             postOtimista.setHeader("Content-type", "application/json");
 
-            postPessimista.setEntity(entity);
+            postPessimista.setEntity(entity2);
             postPessimista.setHeader("Content-type", "application/json");
 
             CloseableHttpResponse respostaOtimista = httpClient.execute(postOtimista);

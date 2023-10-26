@@ -21,7 +21,7 @@ public class ContaController {
         Integer idCredito = (Integer) requestBody.get("idCredito");
         Double valorTrans = (Double) requestBody.get("valorTrans");
 
-        contaService.lockOtimista(idDebito, idCredito, valorTrans);
+        contaService.transcaoLockOtimista(idDebito, idCredito, valorTrans);
     }
     @PostMapping("/pessimista")
     public void lockPessimista(@RequestBody Map<String, Object> requestBody) {
@@ -29,7 +29,7 @@ public class ContaController {
         Integer idCredito = (Integer) requestBody.get("idCredito");
         Double valorTrans = (Double) requestBody.get("valorTrans");
 
-        contaService.lockPessimista(idDebito, idCredito, valorTrans);
+        contaService.transacaoLockPessimista(idDebito, idCredito, valorTrans);
     }
     @GetMapping
     public List<Conta> findAll() {
