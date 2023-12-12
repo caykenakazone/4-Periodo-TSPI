@@ -1,20 +1,21 @@
-version: '3.8'
-
-services:
-  mongodb:
-    image: mongo
-    ports:
-      - "27017:27017"
-
+spring:
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: myDataBase
+  cache:
+    type: redis
   redis:
-    image: redis
-    ports:
-      - "6379:6379"
+    host: localhost
+    port: 6379
+    serializer: org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer
 
-  spring-app:
-    build: .
-    ports:
-      - "8080:8080"
-    depends_on:
-      - mongodb
-      - redis
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
